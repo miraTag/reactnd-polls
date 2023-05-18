@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should render the component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="d-flex align-items-center justify-content-center justify-content-lg-between"
+      >
+        <div
+          class="text-start"
+        >
+          <a
+            class="px-3 py-2 rounded-lg"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            class="px-3 py-2 rounded-lg"
+            href="/leaderboard"
+          >
+            Leaderboard
+          </a>
+          <a
+            class="px-3 py-2"
+            href="/new"
+          >
+            New Poll
+          </a>
+        </div>
+        <div
+          class="text-end"
+        >
+          <img
+            alt="sarahedo"
+            class="rounded-circle"
+            height="32"
+            width="32"
+          />
+          <span
+            class="px-3 py-2"
+            data-testid="user-information"
+          >
+            sarahedo
+          </span>
+          <button
+            class="px-3 py-2 btn-primary btn rounded-lg "
+          >
+            Logout
+          </button>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="d-flex align-items-center justify-content-center justify-content-lg-between"
+    >
+      <div
+        class="text-start"
+      >
+        <a
+          class="px-3 py-2 rounded-lg"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="px-3 py-2 rounded-lg"
+          href="/leaderboard"
+        >
+          Leaderboard
+        </a>
+        <a
+          class="px-3 py-2"
+          href="/new"
+        >
+          New Poll
+        </a>
+      </div>
+      <div
+        class="text-end"
+      >
+        <img
+          alt="sarahedo"
+          class="rounded-circle"
+          height="32"
+          width="32"
+        />
+        <span
+          class="px-3 py-2"
+          data-testid="user-information"
+        >
+          sarahedo
+        </span>
+        <button
+          class="px-3 py-2 btn-primary btn rounded-lg "
+        >
+          Logout
+        </button>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,12 @@
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
