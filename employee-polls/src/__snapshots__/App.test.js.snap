@@ -9,7 +9,7 @@ Object {
         class="container mx-auto py-4"
       >
         <div
-          class=" text-center py-5 my-5 "
+          class="text-center py-5 my-5"
         >
           <h1
             class="p-5"
@@ -22,13 +22,12 @@ Object {
           >
             <div>
               <label
-                class=""
                 for="username"
               >
                 Username
               </label>
               <div
-                class="mt-2 d-flex aligin-items-center justify-content-center"
+                class="mt-2 d-flex align-items-center justify-content-center"
               >
                 <input
                   class="px-3 w-100 rounded form-control"
@@ -49,7 +48,7 @@ Object {
                 Password
               </label>
               <div
-                class="mt-2  d-flex aligin-items-center justify-content-center"
+                class="mt-2 d-flex align-items-center justify-content-center"
               >
                 <input
                   class="px-3 w-100 rounded form-control"
@@ -82,7 +81,7 @@ Object {
       class="container mx-auto py-4"
     >
       <div
-        class=" text-center py-5 my-5 "
+        class="text-center py-5 my-5"
       >
         <h1
           class="p-5"
@@ -95,13 +94,12 @@ Object {
         >
           <div>
             <label
-              class=""
               for="username"
             >
               Username
             </label>
             <div
-              class="mt-2 d-flex aligin-items-center justify-content-center"
+              class="mt-2 d-flex align-items-center justify-content-center"
             >
               <input
                 class="px-3 w-100 rounded form-control"
@@ -122,7 +120,7 @@ Object {
               Password
             </label>
             <div
-              class="mt-2  d-flex aligin-items-center justify-content-center"
+              class="mt-2 d-flex align-items-center justify-content-center"
             >
               <input
                 class="px-3 w-100 rounded form-control"

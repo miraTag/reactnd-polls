@@ -28,9 +28,15 @@ const Leaderboard = ({ users }) => {
     </div>
   );
 };
-const mapStateToProps = ({ users }) => ({
-  users: Object.values(users).sort(
+
+const mapStateToProps = ({ users }) => {
+  const sortedUsers = Object.values(users).sort(
     (a, b) => Object.keys(b.answers).length - Object.keys(a.answers).length
-  ),
-});
+  );
+
+  return {
+    users: sortedUsers,
+  };
+};
+
 export default connect(mapStateToProps)(Leaderboard);

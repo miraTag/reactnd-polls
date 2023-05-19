@@ -32,18 +32,20 @@ Object {
         </div>
         <div
           class="text-end"
+          data-testid="user-info"
         >
           <img
-            alt="sarahedo"
+            alt="tylermcginnis"
             class="rounded-circle"
+            data-testid="user-avatar"
             height="32"
             width="32"
           />
           <span
             class="px-3 py-2"
-            data-testid="user-information"
+            data-testid="user-id"
           >
-            sarahedo
+            tylermcginnis
           </span>
           <button
             class="px-3 py-2 btn-primary btn rounded-lg "
@@ -82,18 +84,20 @@ Object {
       </div>
       <div
         class="text-end"
+        data-testid="user-info"
       >
         <img
-          alt="sarahedo"
+          alt="tylermcginnis"
           class="rounded-circle"
+          data-testid="user-avatar"
           height="32"
           width="32"
         />
         <span
           class="px-3 py-2"
-          data-testid="user-information"
+          data-testid="user-id"
         >
-          sarahedo
+          tylermcginnis
         </span>
         <button
           class="px-3 py-2 btn-primary btn rounded-lg "

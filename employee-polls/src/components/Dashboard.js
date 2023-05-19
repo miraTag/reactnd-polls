@@ -2,13 +2,19 @@ import { connect } from "react-redux";
 import Card from "./Card";
 
 const Dashboard = ({ authUser, questions, users }) => {
-  const unanswered = (question) =>
-    !question.optionOne.votes.includes(authUser.id) &&
-    !question.optionTwo.votes.includes(authUser.id);
+  const isUnanswered = (question, user) => {
+    return (
+      !question.optionOne.votes.includes(authUser.id) &&
+      !question.optionTwo.votes.includes(user.id)
+    );
+  };
 
-  const answered = (question) =>
-    question.optionOne.votes.includes(authUser.id) ||
-    question.optionTwo.votes.includes(authUser.id);
+  const isAnswered = (question, user) => {
+    return (
+      question.optionOne.votes.includes(authUser.id) ||
+      question.optionTwo.votes.includes(user.id)
+    );
+  };
 
   return (
     <div className="py-5 container">
@@ -18,7 +24,7 @@ const Dashboard = ({ authUser, questions, users }) => {
       <div className="album">
         <div className="p-5 text-center container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-between">
-            {questions.filter(unanswered).map((question) => (
+            {questions.filter(isUnanswered).map((question) => (
               <div className="col">
                 <Card question={question} author={users[question.author]} />
               </div>
@@ -30,11 +36,10 @@ const Dashboard = ({ authUser, questions, users }) => {
       <div className="row text-center">
         <h5>Done</h5>
       </div>
-
       <div className="album">
         <div className="p-5 text-center container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-between">
-            {questions.filter(answered).map((question) => (
+            {questions.filter(isAnswered).map((question) => (
               <div className="col">
                 <Card question={question} author={users[question.author]} />
               </div>
@@ -46,10 +51,15 @@ const Dashboard = ({ authUser, questions, users }) => {
   );
 };
 
-const mapStateToProps = ({ authUser, questions, users }) => ({
-  authUser,
-  questions: Object.values(questions).sort((a, b) => b.timestamp - a.timestamp),
-  users,
-});
+const mapStateToProps = ({ authUser, questions, users }) => {
+  const sortedQuestions = Object.values(questions).sort(
+    (a, b) => b.timestamp - a.timestamp
+  );
+  return {
+    authUser,
+    questions: sortedQuestions,
+    users,
+  };
+};
 
 export default connect(mapStateToProps)(Dashboard);
